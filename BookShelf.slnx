@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="BookShelf.Api/BookShelf.Api.csproj" />
+  <Project Path="BookShelf.Application/BookShelf.Application.csproj" Id="01f1d38c-a967-480c-9e6f-755235e1a71a" />
+  <Project Path="BookShelf.Domain/BookShelf.Domain.csproj" Id="b1776f75-c3bf-449e-b1a5-56b73e54e8b8" />
+  <Project Path="BookShelf.Infrastructure/BookShelf.Infrastructure.csproj" Id="2da02f14-5bdc-4aaf-8628-f0e70ff3e5d4" />
+</Solution>
