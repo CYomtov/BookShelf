@@ -29,6 +29,18 @@ namespace BookShelf.Infrastructure.Mapper
             CreateMap<UpdateBookDto, Book>()
                 .ForMember(dest => dest.CreatedAt, opt => opt.Ignore())
                 .ForMember(dest => dest.UpdatedAt, opt => opt.Ignore());
+
+            // Genre Entity -> DTO
+            CreateMap<Genre, GenreDto>().ReverseMap();
+
+            // Genre Update DTO -> Entity
+            CreateMap<UpdateGenreDto, Genre>().ReverseMap();
+
+            // Genre Create DTO -> Entity
+            CreateMap<CreateGenreDto, Genre>().ReverseMap();
+
+            // Status Entity -> DTO
+            CreateMap<BookStatus, StatusDto>().ReverseMap();
         }
 
 

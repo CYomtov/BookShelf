@@ -35,14 +35,14 @@ namespace BookShelf.Api.Controllers
             return Ok(book);
         }
 
-        [HttpPost]
+        [HttpPost("createBook")]
         public async Task<ActionResult<BookDto>> CreateBook(CreateBookDto book)
         {
             var createdBook = await _bookRepository.CreateAsync(book);
             return Ok(createdBook);
         }
 
-        [HttpPost]
+        [HttpPost("updateBook")]
         public async Task<ActionResult<BookDto>> UpdateBook(UpdateBookDto book)
         {
             var updatedBook = await _bookRepository.UpdateAsync(book);

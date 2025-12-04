@@ -1,5 +1,6 @@
 using BookShelf.Application.Interfaces;
 using BookShelf.Infrastructure.Books;
+using BookShelf.Infrastructure.Lookups;
 using BookShelf.Infrastructure.Mapper;
 using BookShelf.Infrastructure.Persistence.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -22,6 +23,7 @@ builder.Services.AddAutoMapper(
 
 // Repositories
 builder.Services.AddScoped<IBookRepository, EfBookRepository>();
+builder.Services.AddScoped<ILookupRepository, efLookupRepository>();
 
 // Add services to the container.
 
